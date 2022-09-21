@@ -26,7 +26,6 @@ robot_angular_drag: 0.1  #N*m / (rad/sec)
 # robot_scrub_factor: 0.846231686 #actual dps over expected dps
 robot_scrub_factor: 0.686957169 #actual dps over expected dps
 
-
 # Swerve Calibration
 robot_is_swerve: false
 robot_num_wheels: 4
