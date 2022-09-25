@@ -16,12 +16,6 @@
   <node name="autonomous_node" pkg="autonomous_node" type="autonomous_node" clear_params="true" output="screen">
   </node>
 
-  <node name="turret_node" pkg="turret_node" type="turret_node" clear_params="true" output="screen">
-  </node>
-
-  <node name="field_element_publisher_node" pkg="field_element_publisher_node" type="field_element_publisher_node" clear_params="true" output="screen">
-  </node>
-
   <node name="network_tables_node" pkg="network_tables_node" type="network_tables_node" clear_params="true" output="screen" respawn="true">
     <rosparam command="load" file="/mnt/working/2022_ROS_Robot/params/network_tables_node_local.yaml" />
   </node>
@@ -35,18 +29,6 @@
     <rosparam param="autorepeat_rate">50</rosparam>
     <rosparam param="default_trig_val">true</rosparam>
   </node> -->
-
-  <!--Remove this for real run-->
-  <node pkg="tf2_ros" type="static_transform_publisher" name="turret_link" args="0 0 1 1.57 0 0 base_link turret_link" respawn="true" />
-  <!--Meters/Radians XYZRPY-->
-  <!--Must have one for every limelight with proper names-->
-  <node pkg="tf2_ros" type="static_transform_publisher" name="limelight_link"      args="0.254 0 0 -0.0523599 -0.463 0.0 turret_link limelight_link" respawn="true" />
-  <node pkg="tf2_ros" type="static_transform_publisher" name="limelight_unaligned" args="0.254 0 0 -0.0523599 0 0.0 turret_link limelight_unaligned" respawn="true" />
-  <node name="limelight_vision_node" pkg="limelight_vision_node" type="limelight_vision_node" clear_params="true" output="screen" respawn="true">
-    <!--Enter comma separated list of limelight names-->
-    <rosparam param="limelight_names">[limelight]</rosparam>
-    <rosparam param="enable_publish_position_data">true</rosparam>
-  </node>
 
   <node name="trajectory_generator_node" pkg="trajectory_generator_node" type="trajectory_generator_node" clear_params="true" output="screen" respawn="true">
     <rosparam command="load" file="/mnt/working/2022_ROS_Robot/params/trajectory_generator_params.yaml" />
