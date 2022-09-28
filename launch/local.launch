@@ -9,7 +9,7 @@
   </node> -->
   <node pkg="tf2_ros" type="static_transform_publisher" name="map_identity" args="0 0 0 0 0 0 odom map" respawn="true" />
   
-  <node name="field_element_publisher_py_node" pkg="field_element_publisher_py_node" type="field_element_publisher_py_node.py" clear_params="true" output="screen">
+  <node name="field_element_publisher_py_node" pkg="field_element_publisher_py_node" type="field_element_publisher_py_node" clear_params="true" output="screen">
   </node>
 
 
