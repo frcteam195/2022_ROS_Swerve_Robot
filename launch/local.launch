@@ -28,11 +28,11 @@
   </node> --> -->
 
 
-  <!-- <node name="joy_node" pkg="joy" type="joy_node" clear_params="true" output="screen">
+  <node name="joy_node" pkg="joy" type="joy_node" clear_params="true" output="screen">
     <rosparam param="dev">/dev/input/js1</rosparam>
     <rosparam param="autorepeat_rate">50</rosparam>
     <rosparam param="default_trig_val">true</rosparam>
-  </node> -->
+  </node>
 
   <!-- <node name="trajectory_generator_node" pkg="trajectory_generator_node" type="trajectory_generator_node" clear_params="true" output="screen" respawn="true">
     <rosparam command="load" file="/mnt/working/2022_ROS_Robot/params/trajectory_generator_params.yaml" />
