@@ -1,9 +1,9 @@
 robot_num_wheels: 4
 drive_motor_ids: [1, 2, 3, 4] # front left, front right, back left, back right
 steering_motor_ids: [5, 6, 7, 8]
-drive_motor_inverted: [false, false, false, false]
+drive_motor_inverted: [true, true, true, true]
 drive_sensor_inverted: [false, false, false, false]
-steering_motor_inverted: [false, false, false, false]
+steering_motor_inverted: [true, true, true, true]
 steering_sensor_inverted: [false, false, false, false]
 robot_wheel_inches_from_center_x: [11.5, 11.5, -11.5, -11.5]
 robot_wheel_inches_from_center_y: [11.5, -11.5, 11.5, -11.5]
@@ -52,7 +52,7 @@ steering_motion_cruise_velocity: 10000.0
 steering_motion_accel: 32000.0
 steering_motion_s_curve_strength: 3
 
-open_loop_ramp: 0.05
+open_loop_ramp: 0.15
 
 supply_current_limit: 40
 supply_current_limit_threshold: 0
