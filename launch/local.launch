@@ -8,7 +8,7 @@
     <rosparam command="load" file="/mnt/working/2022_ROS_Swerve_Robot/params/swerve_drivetrain_node.yaml" />
   </node>
   <node pkg="tf2_ros" type="static_transform_publisher" name="map_identity" args="0 0 0 0 0 0 odom map" respawn="true" />
-  
+
   <!-- <node name="field_element_publisher_py_node" pkg="field_element_publisher_py_node" type="field_element_publisher_py_node" clear_params="true" output="screen">
   </node> -->
 
@@ -43,7 +43,7 @@
   </node> -->
 
   <node name="hmi_agent_node" pkg="hmi_agent_node" type="hmi_agent_node" clear_params="true" output="screen" respawn="true">
-    <rosparam command="load" file="/mnt/working/2022_ROS_Swerve_Robot/params/hmi_agent_node_drive_ps4.yaml" />
+    <rosparam command="load" file="/mnt/working/2022_ROS_Swerve_Robot/params/hmi_agent_node_drive_ps4_pc.yaml" />
     <rosparam command="load" file="/mnt/working/2022_ROS_Swerve_Robot/params/hmi_agent_node_arm_xbox.yaml" />
     <rosparam command="load" file="/mnt/working/2022_ROS_Swerve_Robot/params/hmi_agent_node_buttonbox1.yaml" />
     <rosparam command="load" file="/mnt/working/2022_ROS_Swerve_Robot/params/hmi_agent_node_buttonbox2.yaml" />
