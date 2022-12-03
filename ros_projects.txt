@@ -12,4 +12,5 @@ git@github.com:frcteam195/trajectory_generator_node.git
 git@github.com:frcteam195/trajectory_follower_node.git
 git@github.com:frcteam195/trajectories.git
 git@github.com:frcteam195/frc_robot_utilities_node.git
+git@github.com:frcteam195/frc_robot_utilities_py_node.git
 git@github.com:frcteam195/dashboard_comm_node.git
