@@ -14,3 +14,5 @@ git@github.com:frcteam195/trajectories.git
 git@github.com:frcteam195/frc_robot_utilities_node.git
 git@github.com:frcteam195/frc_robot_utilities_py_node.git
 git@github.com:frcteam195/dashboard_comm_node.git
+git@github.com:frcteam195/ck_ros_msgs_2022_swerve_node.git
+
