@@ -41,16 +41,16 @@ drive_motion_cruise_velocity: 0.0
 drive_motion_accel: 0.0
 drive_motion_s_curve_strength: 0
 
-steering_velocity_kP: 0.13
+steering_velocity_kP: 1.2
 steering_velocity_kI: 0.0
 steering_velocity_kD: 2.0
-steering_velocity_kF: 0.0469
+steering_velocity_kF: 0.422165
 steering_velocity_iZone: 0.0
 steering_velocity_maxIAccum: 0.0
-steering_closed_loop_ramp : 0.01
-steering_motion_cruise_velocity: 180000.0
+steering_closed_loop_ramp : 0.005
+steering_motion_cruise_velocity: 48000.0
 steering_motion_accel: 120000.0
-steering_motion_s_curve_strength: 0
+steering_motion_s_curve_strength: 2
 
 open_loop_ramp: 0.15
 
